@@ -1,0 +1,104 @@
+{
+  "employees": [
+    {
+      "name": "Mark",
+      "designation": "Web Designer",
+      "technology": "Visual Studio",
+      "skills": "Java Script",
+      "availability": "5",
+      "location": "Banglore",
+      "relocate": "Yes",
+      "id": 6
+    },
+    {
+      "name": "Jorden",
+      "designation": "Android Developer",
+      "technology": "Android",
+      "skills": "JQuery",
+      "availability": "5",
+      "location": "Dehradun",
+      "relocate": "No",
+      "id": 7
+    },
+    {
+      "name": "Nancy",
+      "designation": "Wordpress Developer",
+      "technology": "Visual Studio",
+      "skills": "HTML",
+      "availability": "3",
+      "location": "Pune",
+      "relocate": "Yes",
+      "id": 8
+    },
+    {
+      "name": "Herry",
+      "designation": "Product Manager",
+      "technology": "MS Excel",
+      "skills": "Python",
+      "availability": "2",
+      "location": "Dehradun",
+      "relocate": "Yes",
+      "id": 9
+    },
+    {
+      "name": "John",
+      "designation": "Product Manager",
+      "technology": "Android",
+      "skills": "Angular",
+      "availability": "3",
+      "location": "Noida",
+      "relocate": "Yes",
+      "id": 10
+    },
+    {
+      "name": "Anderson",
+      "designation": "Sales Manager",
+      "technology": "Android",
+      "skills": "Angular",
+      "availability": "6",
+      "location": "Dehradun",
+      "relocate": "Yes",
+      "id": 11
+    },
+    {
+      "name": "Denny",
+      "designation": "Wordpress Developer",
+      "technology": "Visual Studio",
+      "skills": "HTML",
+      "availability": "3",
+      "location": "Noida",
+      "relocate": "Yes",
+      "id": 12
+    },
+    {
+      "name": "Ressy",
+      "designation": "Product Manager",
+      "technology": "Eclips",
+      "skills": "Java Script",
+      "availability": "2",
+      "location": "Dehradun",
+      "relocate": "Yes",
+      "id": 13
+    },
+    {
+      "name": "Janny",
+      "designation": "Web Developer",
+      "technology": [
+        "Visual Studio",
+        "Android"
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "Java Script"
+      ],
+      "availability": "3",
+      "location": [
+        "Noida",
+        "Chandigarh"
+      ],
+      "relocate": "Yes",
+      "id": 15
+    }
+  ]
+}

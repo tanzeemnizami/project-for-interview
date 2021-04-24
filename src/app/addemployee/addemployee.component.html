@@ -1,0 +1,85 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Name</label><br>
+        <input type="Text" class="name-input" formControlName="name" placeholder="Name">
+        <span class="focus-border">
+            <i></i>
+        </span>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Designation</label>
+       <select class="select-designation" formControlName="designation">
+            <option value="" disabled selected>Choose..</option>
+            <option value="Web Designer">Web Designer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Android Developer">Android Developer</option>
+            <option value="Wordpress Developer">Wordpress Developer</option>
+            <option value="Product Manager">Product Manager</option>
+            <option value="Sales Manager">Sales Manager</option>
+       </select>
+       <span class="focus-designation">
+        <i></i>
+    </span>
+    </div>
+    </div>
+    <div class="form-group">
+      <label>Technology</label>
+      <ejs-multiselect formControlName="technology"
+        id='localData' #local [dataSource]='technologies' 
+        [fields]='localFieldstwo' [placeholder]='localWaterMarktwo'>
+       </ejs-multiselect>
+    </div>
+    <div class="row">
+    <div class="form-group col-md-6">
+        <label>Skills</label>
+        <ejs-multiselect formControlName="skills"
+        id='localData' #local [dataSource]='skills' 
+        [fields]='localFieldsthree' [placeholder]='localWaterMarkthree'>
+       </ejs-multiselect>
+    </div>
+    <div class="form-group col-md-6">
+        <label>Availability</label>
+        <select class="select-availability" formControlName="availability">
+          <option value="" disabled selected>Choose..</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <span class="focus-availability">
+         <i></i>
+     </span>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6">
+            <label>Base Location</label>
+            <ejs-multiselect formControlName="location"
+           id='localData' #local [dataSource]='location' 
+           [fields]='localFieldsfive' [placeholder]='localWaterMarkfive'>
+           </ejs-multiselect>
+          </div>
+      <div class="form-group col-md-6">
+        <label>Open Relocate</label>
+        <select class="select-relocate" formControlName="relocate">
+          <option value="" disabled selected>Choose..</option>
+             <option value="Yes">Yes</option>
+             <option value="No">No</option>
+             
+        </select>
+        <span class="focus-relocate">
+         <i></i>
+     </span>
+      </div>
+    </div>
+    <button type="submit" class="btn form-btn">Done</button>
+    <span *ngIf="invalidMsg" class="invalid-msg">Please fill all fields!</span>
+    <span *ngIf="validMsg" class="valid-msg">Successfully! your data has been succesfull submited.</span>
+  </form>
