@@ -10,6 +10,7 @@ import { MultiSelectAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { EmployeedetailComponent } from './employeedetail/employeedetail.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -30,6 +31,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     AppRoutingModule,
     HttpClientModule,
     Ng2SearchPipeModule,
+    MatSelectModule,
     BrowserAnimationsModule 
    ],
   providers: [],

@@ -60,20 +60,21 @@ id='localData' #local [dataSource]='technologies'
        </ejs-multiselect>
   </div>
   <div class="form-group">
-      <label style="font-weight: 500;" for="exprience">Total Exprience</label><p style="margin-left: 82%;">Total.{{sliderVal.value}}</p>
-      <input style="width: 100%;" type="range" class="form-range" #sliderVal min="1" max="20" formControlName="exprience">
-      <label class="form-label" for="customRange2">Example range</label>
+      <label style="font-weight: 500;" for="exprience">Total Exprience</label><p style="margin-left: 82%;">Total{{sliderRange.value}}</p>
+      <input style="width: 100%;" type="range" class="form-range" #sliderRange min="1" max="20">
   </div>
   <div class="form-group">
       <label style="font-weight: 500;" for="location">Location</label>
+
       <ejs-multiselect formControlName="location"
            id='localData' #local [dataSource]='location' 
            [fields]='localFieldsfive' [placeholder]='localWaterMarkfive'>
            </ejs-multiselect>
     </div>
       <div class="form-inline" style="margin: 30px 0px 0px 48%;">
-          <a href="#" class="btn btn-cancel">Cancel</a>
-          <button type="submit" class="btn btn-done">Done</button>
+          <a href="Refrersh" class="btn btn-cancel">Cancel</a>
+          <button type="submit" class="btn btn-done">Done </button>
+          
       </div>
       <div class="text">
           <p>Based on the filters selected the employees data should be filterd.
